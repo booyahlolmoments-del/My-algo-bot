@@ -59,7 +59,7 @@ elif page == "Strategy Setup":
             "ICT Silver Bullet / FVG Strategy"
         ]
         selected_strategy = st.selectbox("Select Strategy", strategies)
-        risk_per_trade = st.number_input("Risk Per Trade (USD)", min_value=0.5, value=25.0, step=0.5)
+        risk_per_trade = st.number_input("Risk Per Trade (USD)", min_value=0.00, value=25.0, step=0.5)
         
     st.info(f"Summary: You are setting up to trade **{selected_coin}** on a **{selected_timeframe}** timeframe using **{selected_strategy}** with a risk of **${risk_per_trade}** per trade.")
     
